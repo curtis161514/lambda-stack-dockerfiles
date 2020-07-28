@@ -33,7 +33,7 @@ RUN apt-get update && \
 		lambda-stack-cuda \
 		lambda-server && \
 	rm -rf /var/lib/apt/lists/* \
-	pip3 install gym 
+	pip3 install gym
 
 
 # Setup for nvidia-docker
