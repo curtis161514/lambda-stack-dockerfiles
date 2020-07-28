@@ -32,8 +32,9 @@ RUN apt-get update && \
 		--option "Acquire::http::Pipeline-Depth=0" \
 		lambda-stack-cuda \
 		lambda-server && \
-	pip3 install gym \
-	rm -rf /var/lib/apt/lists/*
+	rm -rf /var/lib/apt/lists/* \
+	pip3 install gym 
+
 
 # Setup for nvidia-docker
 ENV NVIDIA_VISIBLE_DEVICES all
