@@ -32,7 +32,7 @@ RUN apt-get update && \
 		--option "Acquire::http::Pipeline-Depth=0" \
 		lambda-stack-cuda \
 		lambda-server && \
-	rm -rf /var/lib/apt/lists/* \
+# 	rm -rf /var/lib/apt/lists/* \
 	pip3 install gym
 
 
