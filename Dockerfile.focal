@@ -31,8 +31,8 @@ RUN apt-get update && \
 		--option "Acquire::http::No-Cache=true" \
 		--option "Acquire::http::Pipeline-Depth=0" \
 		lambda-stack-cuda \
-		pip3 install gym \
 		lambda-server && \
+	pip3 install gym\
 	rm -rf /var/lib/apt/lists/*
 
 # Setup for nvidia-docker
